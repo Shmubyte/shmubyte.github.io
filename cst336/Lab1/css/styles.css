@@ -1,0 +1,87 @@
+body{
+    background-color: green;
+    color:black;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 550;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+
+}
+header,nav, footer {
+    text-align: center;
+}
+nav a{
+    padding: 15px;
+    padding-bottom: 4px;
+    font-size: 1.8em;
+    text-decoration: none;
+    color:black;
+}
+nav a.currentPage{
+    color: rgb(240, 156, 125);
+}
+nav a:hover{
+    border-bottom: 2px orange solid;
+    font-size: 2em;
+    transition:.9s;
+}
+main{
+    display:flex;
+    font-size: 1.5em;
+    justify-content: center;
+    align-items: center; /*this centers the text in the pic/text box*/
+}
+
+table{
+    margin:0px auto;
+}
+td{
+    padding:10px;
+    font-size: 1.3em;
+}
+td strong{
+    color:orange
+}
+#table-header{
+    font-size: 1.5em;
+    background-color: rgb(2, 31, 15);
+}
+.table-row{
+    background-color: rgb(88, 197, 145);
+}
+
+.years{
+    display:flex;
+    justify-content: center;
+}
+
+h2{
+    background-color: rgb(2, 31, 15);
+    color: orange;
+    padding: 10px 20px; 
+    width: fit-content; /*makes the box small*/
+    margin: 0 auto; /* Centers the block */
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+ul{
+    width:900px;
+    margin:10px auto;
+    line-height: 1.5em;
+    font-size: 1.3em;
+    text-align: left;
+}
+.firstWord{
+    font-weight: bold;
+    color: orange;
+    background-color: rgb(29, 65, 85);
+}
+
+
+
+footer{
+    color: whitesmoke;
+}
