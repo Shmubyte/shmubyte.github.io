@@ -75,7 +75,7 @@ ol{
     flex-direction: column;
 
 }
-#imgList{
+.imgList{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -83,7 +83,7 @@ ol{
     color:white;
     background-color: black;
 }
-#survLists{
+.survLists{
     width: 100%;
     margin-left: 20px;
     display: flex;
@@ -108,4 +108,8 @@ ol{
 #resourceList{
     font-size: 2em;
     color: black;
+}
+
+h4{
+    background-color: black;
 }
