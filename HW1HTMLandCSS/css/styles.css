@@ -92,7 +92,7 @@ ol{
     align-items: left;
 }
 
-#thielImg{
+.thielImg{
     display: flex;
     flex-direction: column;
     align-items: center;
