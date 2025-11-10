@@ -59,7 +59,7 @@ function checkGuess(){
     else{ 
         document.querySelector("#guesses").textContent += "" + guess + " ";
         
-        if(attempts >= 8){
+        if(attempts >= 7){
             feedback.textContent = "Sorry, you lost! The number was " + randomNumber + ".";
             feedback.style.color = "red";
             gamesLost++;
