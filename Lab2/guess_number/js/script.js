@@ -10,7 +10,7 @@ let gamesLost = 0;
 function initializeGame(){
     randomNumber = Math.floor(Math.random() * 99) + 1;  // 1-100
     console.log("randomNumber: " + randomNumber);
-
+    attempts = 1;
     document.querySelector("#resetBtn").style.display = "none";
     document.querySelector("#guessBtn").style.display = "inline";
     document.querySelector("#guessBtn").disabled = false;
@@ -31,7 +31,6 @@ function checkGuess(){
     let feedback = document.querySelector("#feedback");
     feedback.textContent = "";
 
-
     // Check if it's a valid number
     if(isNaN(guess)){
         feedback.textContent = "Please enter a valid number!";
@@ -45,15 +44,12 @@ function checkGuess(){
       return;
     }
     
-    
     displayAttemptNum();
     
-
     if(guess == randomNumber){
         feedback.textContent = "Congratulations! You guessed the number " + randomNumber + " in " + attempts + " attempt(s).";
         feedback.style.color = "green";
         gamesWon++;
-        attempts=1;
         gameOver();
     } 
     else{ 
@@ -63,7 +59,6 @@ function checkGuess(){
             feedback.textContent = "Sorry, you lost! The number was " + randomNumber + ".";
             feedback.style.color = "red";
             gamesLost++;
-            attempts=1;
             gameOver();
         }
         else if(guess > randomNumber){
@@ -90,7 +85,6 @@ function updateStats(){
     document.querySelector("#stats").textContent = 
         "Games Won: " + gamesWon + " | Games Lost: " + gamesLost;
     document.querySelector("#attemptNum").textContent = "Attempt Number: " + attempts
-    
 }
 
 function displayAttemptNum(){
