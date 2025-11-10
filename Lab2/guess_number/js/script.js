@@ -14,7 +14,7 @@ function initializeGame(){
     document.querySelector("#resetBtn").style.display = "none";
     document.querySelector("#guessBtn").style.display = "inline";
     document.querySelector("#guessBtn").disabled = false;
-    document.querySelector("#attemptNum").textContent = "Attempt Number: 1";
+    document.querySelector("#attemptNum").textContent = "Attempt Number:"+ attempts;
 
     let playerGuess = document.querySelector("#playerGuess");
     playerGuess.value = "";
