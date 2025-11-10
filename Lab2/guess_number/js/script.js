@@ -14,6 +14,7 @@ function initializeGame(){
     document.querySelector("#resetBtn").style.display = "none";
     document.querySelector("#guessBtn").style.display = "inline";
     document.querySelector("#guessBtn").disabled = false;
+    document.querySelector("#attemptNum").textContent = "Attempt Number: 1";
 
     let playerGuess = document.querySelector("#playerGuess");
     playerGuess.value = "";
@@ -84,7 +85,6 @@ function gameOver(){
 function updateStats(){
     document.querySelector("#stats").textContent = 
         "Games Won: " + gamesWon + " | Games Lost: " + gamesLost;
-    document.querySelector("#attemptNum").textContent = "Attempt Number: " + attempts
 }
 
 function displayAttemptNum(){
