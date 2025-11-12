@@ -130,7 +130,7 @@ function gradeQuiz(){
     }
     //Q9
     if(document.querySelector("#Jefferson").checked && 
-       document.querySelector("#Roosevelt").checked && 
+       document.querySelector("#Washington").checked && 
        !document.querySelector("#Jackson").checked && 
        !document.querySelector("#Franklin").checked){
         rightAnswer(9);
@@ -201,9 +201,9 @@ function isFormValid(){
     let jacksonchecked = document.querySelector("#Jackson").checked;
     let franklinchecked = document.querySelector("#Franklin").checked;
     let jeffersonchecked = document.querySelector("#Jefferson").checked;
-    let rooseveltchecked = document.querySelector("#Roosevelt").checked;
+    let washingtonchecked = document.querySelector("#Washington").checked;
     
-    if(!jacksonchecked && !franklinchecked && !jeffersonchecked && !rooseveltchecked){
+    if(!jacksonchecked && !franklinchecked && !jeffersonchecked && !washingtonchecked){
         isValid = false;
         let validationDiv = document.querySelector('.validationFdbk[data-question="9"]');
         if(validationDiv){
