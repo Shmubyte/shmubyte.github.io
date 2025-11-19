@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet">
+    <title>HW3</title>
+</head>
+<body>
+    <div class="container">
+        <h1> Rick and Morty Character Search</h1>
+        <p class="subtitle">Enter a character ID (1-826) or name</p>
+        
+        <form id="searchForm">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="1 or Rick Sanchez">
+                <button onclick="searchCharacter()">Search</button>
+            </div>
+        </form>
+
+        <div class="error" id="error"></div>
+
+        <div class="character-card" id="characterCard">
+            <div class="character-header">
+                <img id="charImage" class="character-image" src="" alt="">
+                <div class="character-basic">
+                    <div class="character-name" id="charName"></div>
+                    <span class="status" id="charStatus"></span>
+                    <div class="info-item">
+                        <div class="info-label">Species</div>
+                        <div class="info-value" id="charSpecies"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-item">
+                    <div class="info-label">Type</div>
+                    <div class="info-value" id="charType"></div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Gender</div>
+                    <div class="info-value" id="charGender"></div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Origin</div>
+                    <div class="info-value" id="charOrigin"></div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Location</div>
+                    <div class="info-value" id="charLocation"></div>
+                </div>
+            </div>
+
+            <div class="episodes">
+                <div class="episodes-title">Episodes Appeared</div>
+                <div class="episodes-count" id="charEpisodes"></div>
+            </div>
+        </div>
+    </div>
+    
+<script src = "js/script.js"> </script>
+</body>
+
+</html>
